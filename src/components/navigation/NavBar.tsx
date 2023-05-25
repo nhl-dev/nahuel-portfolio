@@ -13,7 +13,7 @@ import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 import NavLink from './NavLink';
 
-const links = ['Dashboard', 'Projects', 'Resume'];
+const links = ['About Me', 'Projects', 'Resume'];
 
 const NavBar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -21,7 +21,7 @@ const NavBar = () => {
 
     return (
         <>
-            <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} mb={{ base: 0, md: 20 }}>
+            <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} mb={{ base: 0 }}>
                 <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
                     <IconButton
                         size={'md'}

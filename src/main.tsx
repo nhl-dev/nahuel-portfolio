@@ -12,6 +12,7 @@ const theme = extendTheme({
         padding: 0,
         height: '100vh',
         Width: '100%',
+        scrollBehavior: 'smooth',
       },
       // styles for the `header`
       '.screen': {

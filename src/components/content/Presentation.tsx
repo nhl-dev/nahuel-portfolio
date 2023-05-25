@@ -1,13 +1,15 @@
 import { Heading, Box, Text, Image, Flex, HStack, useColorModeValue } from '@chakra-ui/react'
 
-import { ChevronDownIcon } from '@chakra-ui/icons'
-
 const Presentation = () => {
+
+    const detailColor = useColorModeValue('purple.500', 'purple.200');
+
     return (
         <Flex
             alignItems={'center'}
             justifyContent={'space-around'}
-            p={{ base: 8, md: 20 }}
+            px={{ base: 8, md: 20 }}
+            py={{ base: 8, md: 40 }}
             direction={{ base: 'column', lg: 'row' }}
         >
             <Box display={{ lg: 'none' }}>
@@ -19,8 +21,8 @@ const Presentation = () => {
                     <Heading as="h1" size="2xl" isTruncated>
                         Nahuel Caballero
                     </Heading>
-                    <Heading as="h2" size="lg" isTruncated color={useColorModeValue('purple.500', 'purple.200')}>
-                        Frontend Developer
+                    <Heading as="h2" size="lg" isTruncated color={detailColor}>
+                        Web Developer
                     </Heading>
 
                     <Text fontSize='2xl' mt={5} textAlign={{ base: 'center', sm: 'left' }}>Hello! I'm Nahuel Caballero, a Frontend Developer based in Uruguay.</Text>
@@ -41,13 +43,6 @@ const Presentation = () => {
             <Box display={{ base: 'none', lg: 'flex' }}>
                 <Image src='https://bit.ly/dan-abramov' alt='Dan Abramov' />
             </Box>
-
-            <ChevronDownIcon
-                color={'white'}
-                position={'absolute'}
-                bottom={10}
-                boxSize={50}
-                display={{ base: 'none', md: 'block' }} />
 
         </Flex>
     )
