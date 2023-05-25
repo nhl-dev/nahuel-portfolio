@@ -8,14 +8,14 @@ const Presentation = () => {
             alignItems={'center'}
             justifyContent={'space-around'}
             p={{ base: 8, md: 20 }}
-            direction={{ base: 'column', md: 'row' }}
+            direction={{ base: 'column', lg: 'row' }}
         >
-            <Box display={{ md: 'none' }}>
+            <Box display={{ lg: 'none' }}>
                 <Image src='https://bit.ly/dan-abramov' alt='Dan Abramov' boxSize={200} mb={10} />
             </Box>
 
             <Box>
-                <Box display='flex' flexDirection='column' alignItems={{ base: 'center', sm: 'start' }}>
+                <Box display='flex' flexDirection='column' alignItems={{ base: 'center', lg: 'start' }}>
                     <Heading as="h1" size="2xl" isTruncated>
                         Nahuel Caballero
                     </Heading>
@@ -38,7 +38,7 @@ const Presentation = () => {
                 </Flex>
             </Box>
 
-            <Box display={{ base: 'none', md: 'flex' }}>
+            <Box display={{ base: 'none', lg: 'flex' }}>
                 <Image src='https://bit.ly/dan-abramov' alt='Dan Abramov' />
             </Box>
 
