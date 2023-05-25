@@ -1,4 +1,4 @@
-import { Heading, Box, Text, Image, Flex, HStack } from '@chakra-ui/react'
+import { Heading, Box, Text, Image, Flex, HStack, useColorModeValue } from '@chakra-ui/react'
 
 import { ChevronDownIcon } from '@chakra-ui/icons'
 
@@ -19,7 +19,7 @@ const Presentation = () => {
                     <Heading as="h1" size="2xl" isTruncated>
                         Nahuel Caballero
                     </Heading>
-                    <Heading as="h2" size="lg" isTruncated color={'purple.200'}>
+                    <Heading as="h2" size="lg" isTruncated color={useColorModeValue('purple.500', 'purple.200')}>
                         Frontend Developer
                     </Heading>
 
