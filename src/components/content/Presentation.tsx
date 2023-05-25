@@ -1,5 +1,7 @@
 import { Heading, Box, Text, Image, Flex, HStack } from '@chakra-ui/react'
 
+import { ChevronDownIcon } from '@chakra-ui/icons'
+
 const Presentation = () => {
     return (
         <Flex
@@ -39,6 +41,13 @@ const Presentation = () => {
             <Box display={{ base: 'none', md: 'flex' }}>
                 <Image src='https://bit.ly/dan-abramov' alt='Dan Abramov' />
             </Box>
+
+            <ChevronDownIcon
+                color={'white'}
+                position={'absolute'}
+                bottom={10}
+                boxSize={50}
+                display={{ base: 'none', md: 'block' }} />
 
         </Flex>
     )
