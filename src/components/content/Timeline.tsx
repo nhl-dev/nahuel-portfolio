@@ -106,7 +106,7 @@ const Card = ({ id, title, description, date }: CardProps) => {
                 content: `""`,
                 w: '0',
                 h: '0',
-                borderColor: `transparent ${useColorModeValue('#edf2f6', '#1a202c')} transparent`,
+                borderColor: `transparent ${useColorModeValue('#805AD5', '#D6BCFA')} transparent`,
                 borderStyle: 'solid',
                 borderWidth: borderWidthValue,
                 position: 'absolute',
@@ -124,7 +124,7 @@ const Card = ({ id, title, description, date }: CardProps) => {
                     <Text fontSize="md">{description}</Text>
                     <Box display={'flex'} flexDirection={'row'} alignItems={'center'}>
                         <CalendarIcon color={useColorModeValue('purple.500', 'purple.200')} boxSize={4} display={isEvenId || isMobile ? 'box' : 'none'} mr={2} />
-                        <Text fontSize="sm" color={'white'}>
+                        <Text fontSize="sm">
                             {date}
                         </Text>
                         <CalendarIcon color={useColorModeValue('purple.500', 'purple.200')} boxSize={4} display={!isEvenId && !isMobile ? 'box' : 'none'} ml={2} />
