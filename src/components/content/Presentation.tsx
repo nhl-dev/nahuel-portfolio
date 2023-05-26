@@ -25,11 +25,16 @@ const Presentation = () => {
                         Web Developer
                     </Heading>
 
-                    <Text fontSize='2xl' mt={5} textAlign={{ base: 'center', sm: 'left' }}>Hello! I'm Nahuel Caballero, a Frontend Developer based in Uruguay.</Text>
+                    <Text fontSize='2xl' mt={5} textAlign={{ base: 'center', sm: 'left' }}>Welcome to my Portfolio! I'm Nahuel Caballero, a Web Developer based in Uruguay.</Text>
                 </Box>
 
+                <HStack spacing={{ base: 2, sm: 4 }} mt={5} justifyContent={{ base: 'center', sm: 'left' }}>
+                    <Image src='https://i.ibb.co/dDTmGNT/HTML5-logo-and-wordmark-svg.png' alt='LinkedIn' boxSize={10} fit={'contain'} />
+                    <Image src='https://i.ibb.co/d606bWv/CSS3-logo-and-wordmark-svg.png' alt='Github' boxSize={10} fit={'contain'} />
+                </HStack>
+
                 <Flex direction={{ base: 'column', sm: 'row' }} alignItems={'center'} mt={10}>
-                    <Text fontSize='2xl' fontWeight={'bold'} mr={{ base: 0, sm: 12 }}>Tech Stack</Text>
+                    <Text fontSize='2xl' fontWeight={'bold'} mr={{ base: 0, sm: 12 }}>Tech Stack:</Text>
                     <HStack spacing={{ base: 2, sm: 4 }}>
                         <Image src='https://i.ibb.co/dDTmGNT/HTML5-logo-and-wordmark-svg.png' alt='HTML5' boxSize={10} fit={'contain'} />
                         <Image src='https://i.ibb.co/d606bWv/CSS3-logo-and-wordmark-svg.png' alt='CSS3' boxSize={10} fit={'contain'} />

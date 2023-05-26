@@ -5,6 +5,7 @@ import NavBar from './components/navigation/NavBar'
 
 import { working, education } from './assets/data'
 import { Flex } from '@chakra-ui/react'
+import Contact from './components/content/Contact'
 
 function App() {
 
@@ -21,6 +22,8 @@ function App() {
 
         <Timeline title='Education' data={education} />
       </Flex>
+
+      <Contact />
     </>
   )
 }

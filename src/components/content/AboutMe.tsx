@@ -16,7 +16,7 @@ const AboutMe = () => {
 
                 <Image src="https://i.ibb.co/mhvpSK3/d7mb0cw-9d9cfb4b-867d-4088-8712-51590701e7b1.png" alt="Placeholder" mx="auto" my={50} />
 
-                <chakra.p fontSize="md" textAlign="center">
+                <chakra.p fontSize="lg" textAlign="center" mb={5}>
                     Nahuel Caballero better known as nhl. Currently working as a FullStack Web developer, focused on my professional development.
                 </chakra.p>
 
