@@ -4,6 +4,7 @@ import Timeline from './components/content/Timeline'
 import NavBar from './components/navigation/NavBar'
 
 import { working, education } from './assets/data'
+import { Flex } from '@chakra-ui/react'
 
 function App() {
 
@@ -15,9 +16,11 @@ function App() {
 
       <AboutMe />
 
-      <Timeline title='Working Experience' data={working} />
+      <Flex flexDirection={{ base: 'column', '2xl': 'row' }} alignContent={'center'}>
+        <Timeline title='Working Experience' data={working} />
 
-      <Timeline title='Education' data={education} />
+        <Timeline title='Education' data={education} />
+      </Flex>
     </>
   )
 }

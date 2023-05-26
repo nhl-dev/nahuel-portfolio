@@ -38,7 +38,7 @@ const Timeline = ({ title, data }: Props) => {
                     <Icon as={UilGraduationCap} w={10} h={10} color={detailColor} />
                     : <Icon as={UilBag} w={10} h={10} color={detailColor} />
                 }
-                <chakra.h3 fontSize="4xl" fontWeight="bold">
+                <chakra.h3 fontSize="3xl" fontWeight="bold">
                     {title}
                 </chakra.h3>
             </Box>
