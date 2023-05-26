@@ -11,12 +11,12 @@ import {
     Icon
 } from '@chakra-ui/react';
 
-import { CalendarIcon } from '@chakra-ui/icons';
-import { UilGraduationCap, UilBag } from '@iconscout/react-unicons';
+import { UilGraduationCap, UilBag, UilBuilding, UilUniversity, UilCalender } from '@iconscout/react-unicons';
 
 interface CardProps {
     id: number;
     title: string;
+    type: string;
     description: string;
     date: string;
 }
@@ -76,7 +76,7 @@ const Timeline = ({ title, data }: Props) => {
     );
 };
 
-const Card = ({ id, title, description, date }: CardProps) => {
+const Card = ({ id, title, type, description, date }: CardProps) => {
 
     // For even id show card on left side
     // For odd id show card on right side
@@ -121,13 +121,27 @@ const Card = ({ id, title, description, date }: CardProps) => {
                     <chakra.h1 fontSize="lg" lineHeight={1.2} fontWeight="bold" w="100%">
                         {title}
                     </chakra.h1>
-                    <Text fontSize="md">{description}</Text>
                     <Box display={'flex'} flexDirection={'row'} alignItems={'center'}>
-                        <CalendarIcon color={useColorModeValue('purple.500', 'purple.200')} boxSize={4} display={isEvenId || isMobile ? 'box' : 'none'} mr={2} />
+                        <Icon
+                            as={type == 'Education' ? UilUniversity : UilBuilding}
+                            color={useColorModeValue('purple.500', 'purple.200')}
+                            boxSize={4}
+                            display={isEvenId || isMobile ? 'box' : 'none'} mr={2} />
+
+                        <Text fontSize="md">{description}</Text>
+                        <Icon
+                            as={type == 'Education' ? UilUniversity : UilBuilding}
+                            color={useColorModeValue('purple.500', 'purple.200')}
+                            boxSize={4}
+                            display={!isEvenId && !isMobile ? 'box' : 'none'}
+                            ml={2} />
+                    </Box>
+                    <Box display={'flex'} flexDirection={'row'} alignItems={'center'}>
+                        <Icon as={UilCalender} color={useColorModeValue('purple.500', 'purple.200')} boxSize={4} display={isEvenId || isMobile ? 'box' : 'none'} mr={2} />
                         <Text fontSize="sm">
                             {date}
                         </Text>
-                        <CalendarIcon color={useColorModeValue('purple.500', 'purple.200')} boxSize={4} display={!isEvenId && !isMobile ? 'box' : 'none'} ml={2} />
+                        <Icon as={UilCalender} color={useColorModeValue('purple.500', 'purple.200')} boxSize={4} display={!isEvenId && !isMobile ? 'box' : 'none'} ml={2} />
                     </Box>
                 </VStack>
             </Box>
