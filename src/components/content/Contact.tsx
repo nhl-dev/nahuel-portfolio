@@ -1,25 +1,18 @@
 import {
     Box,
-    Button,
     Flex,
-    FormControl,
-    FormLabel,
     Heading,
     IconButton,
-    Input,
-    InputGroup,
-    InputLeftElement,
     Link,
     Stack,
-    Textarea,
     Tooltip,
     useClipboard,
     useColorModeValue,
     VStack,
 } from '@chakra-ui/react';
 
-import { BsGithub, BsLinkedin, BsPerson, BsFillTelephoneFill } from 'react-icons/bs';
-import { MdEmail, MdOutlineEmail } from 'react-icons/md';
+import { BsGithub, BsLinkedin, BsFillTelephoneFill } from 'react-icons/bs';
+import { MdEmail } from 'react-icons/md';
 
 const Contact = () => {
 
