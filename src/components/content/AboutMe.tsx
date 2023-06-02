@@ -14,7 +14,7 @@ const AboutMe = () => {
                     About Me
                 </chakra.h3>
 
-                <Image src="https://i.ibb.co/Jm83PM3/separador.png" alt="separator" mx="auto" my={50} />
+                <Image src="https://i.ibb.co/MfpC2ZD/separador.png" alt="separator" mx="auto" my={8} />
 
                 <chakra.p fontSize="lg" textAlign="center" mb={5} color="#121212" fontWeight={'500'}>
                     Nahuel Caballero better known as nhl. Currently working as a FullStack Web developer, focused on my professional development.
