@@ -4,10 +4,13 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 
 const theme = extendTheme({
+  initialColorMode: 'dark',
+  useSystemColorMode: false,
   styles: {
     global: {
       // styles for the `body`
       body: {
+        backgroundColor: '#121212',
         margin: 0,
         padding: 0,
         height: '100vh',
@@ -17,10 +20,18 @@ const theme = extendTheme({
       // styles for the `header`
       '.screen': {
         width: '100%',
-        height: '100vh',
+        minHeight: '85vh',
         margin: 0,
         display: 'flex',
         flexDirection: 'column',
+        backgroundImage: 'url(https://i.ibb.co/nC6p7zZ/bkg.jpg)',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+      },
+      // styles for the odd items
+      '.odd': {
+        backgroundColor: '#ebe8e8',
       },
     },
   },

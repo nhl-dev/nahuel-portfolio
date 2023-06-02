@@ -45,7 +45,7 @@ const Card = ({ id, title, type, description, date }: CardProps) => {
                 content: `""`,
                 w: '0',
                 h: '0',
-                borderColor: `transparent ${useColorModeValue('#805AD5', '#D6BCFA')} transparent`,
+                borderColor: `transparent ${useColorModeValue('#805AD5', '#805AD5')} transparent`,
                 borderStyle: 'solid',
                 borderWidth: borderWidthValue,
                 position: 'absolute',
@@ -58,30 +58,30 @@ const Card = ({ id, title, type, description, date }: CardProps) => {
                 <Box ref={ref}>
 
                     <VStack spacing={2} mb={3} alignItems={isEvenId || isMobile ? 'flex-start' : 'flex-end'}>
-                        <chakra.h1 fontSize="lg" lineHeight={1.2} fontWeight="bold" w="100%">
+                        <chakra.h1 fontSize="lg" lineHeight={1.2} fontWeight="bold" w="100%" color="#121212">
                             {title}
                         </chakra.h1>
                         <Box display={'flex'} flexDirection={'row'} alignItems={'center'}>
                             <Icon
                                 as={type == 'Education' ? UilUniversity : UilBuilding}
-                                color={useColorModeValue('purple.500', 'purple.200')}
+                                color='purple.500'
                                 boxSize={4}
                                 display={isEvenId || isMobile ? 'box' : 'none'} mr={2} />
 
-                            <Text fontSize="md">{description}</Text>
+                            <Text fontSize="md" color="#121212">{description}</Text>
                             <Icon
                                 as={type == 'Education' ? UilUniversity : UilBuilding}
-                                color={useColorModeValue('purple.500', 'purple.200')}
+                                color='purple.500'
                                 boxSize={4}
                                 display={!isEvenId && !isMobile ? 'box' : 'none'}
                                 ml={2} />
                         </Box>
                         <Box display={'flex'} flexDirection={'row'} alignItems={'center'}>
-                            <Icon as={UilCalender} color={useColorModeValue('purple.500', 'purple.200')} boxSize={4} display={isEvenId || isMobile ? 'box' : 'none'} mr={2} />
-                            <Text fontSize="sm">
+                            <Icon as={UilCalender} color='purple.500' boxSize={4} display={isEvenId || isMobile ? 'box' : 'none'} mr={2} />
+                            <Text fontSize="sm" color="#121212">
                                 {date}
                             </Text>
-                            <Icon as={UilCalender} color={useColorModeValue('purple.500', 'purple.200')} boxSize={4} display={!isEvenId && !isMobile ? 'box' : 'none'} ml={2} />
+                            <Icon as={UilCalender} color='purple.500' boxSize={4} display={!isEvenId && !isMobile ? 'box' : 'none'} ml={2} />
                         </Box>
                     </VStack>
                 </Box>

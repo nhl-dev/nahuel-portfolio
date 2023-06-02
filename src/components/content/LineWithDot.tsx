@@ -28,7 +28,7 @@ const LineWithDot = () => {
                     backgroundSize="cover"
                     backgroundRepeat="no-repeat"
                     backgroundPosition="center center"
-                    bg={useColorModeValue('purple.500', 'purple.200')}
+                    bg='purple.500'
                     borderRadius="100px"
                     backgroundImage="none"
                     opacity={1}

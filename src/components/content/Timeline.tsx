@@ -3,7 +3,6 @@ import {
     chakra,
     Container,
     Flex,
-    useColorModeValue,
     useBreakpointValue,
     Icon,
     ScaleFade
@@ -29,17 +28,17 @@ const Timeline = ({ title, data }: Props) => {
 
     const isMobile = useBreakpointValue({ base: true, md: false });
     const isDesktop = useBreakpointValue({ base: false, md: true });
-    const detailColor = useColorModeValue('purple.500', 'purple.200');
+    const detailColor = 'purple.500';
 
     return (
-        <Container maxWidth="3xl" p={{ base: 2, sm: 10 }} mt={70}>
+        <Container maxWidth="3xl" p={{ base: 2, sm: 10 }} >
             <ScaleFade in={inViewport} >
                 <Box mb={50} textAlign="center" ref={ref}>
                     {title === 'Education' ?
                         <Icon as={UilGraduationCap} w={10} h={10} color={detailColor} />
                         : <Icon as={UilBag} w={10} h={10} color={detailColor} />
                     }
-                    <chakra.h3 fontSize="3xl" fontWeight="bold">
+                    <chakra.h3 fontSize="3xl" fontWeight="bold" color="#121212">
                         {title}
                     </chakra.h3>
                 </Box>

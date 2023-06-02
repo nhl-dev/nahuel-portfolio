@@ -9,18 +9,18 @@ const AboutMe = () => {
 
     return (
         <ScaleFade in={inViewport} >
-            <Container mt={0} ref={ref} >
-                <chakra.h3 fontSize="3xl" fontWeight="bold" mb={18} textAlign="center">
+            <Container ref={ref} py={70} >
+                <chakra.h3 fontSize="3xl" fontWeight="bold" mb={18} textAlign="center" color="#121212" >
                     About Me
                 </chakra.h3>
 
-                <Image src="https://i.ibb.co/mhvpSK3/d7mb0cw-9d9cfb4b-867d-4088-8712-51590701e7b1.png" alt="Placeholder" mx="auto" my={50} />
+                <Image src="https://i.ibb.co/Jm83PM3/separador.png" alt="separator" mx="auto" my={50} />
 
-                <chakra.p fontSize="lg" textAlign="center" mb={5}>
+                <chakra.p fontSize="lg" textAlign="center" mb={5} color="#121212" fontWeight={'500'}>
                     Nahuel Caballero better known as nhl. Currently working as a FullStack Web developer, focused on my professional development.
                 </chakra.p>
 
-                <chakra.p fontSize="lg" mb={18} textAlign="center">
+                <chakra.p fontSize="lg" mb={18} textAlign="center" color="#121212" fontWeight={'500'}>
                     My main goal is to specialize in Frontend Web Development, as I love creating visually appealing applications.
                 </chakra.p>
             </Container>

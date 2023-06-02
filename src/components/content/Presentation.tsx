@@ -1,8 +1,8 @@
-import { Heading, Box, Text, Image, Flex, HStack, useColorModeValue } from '@chakra-ui/react'
+import { Heading, Box, Text, Image, Flex, HStack } from '@chakra-ui/react'
 
 const Presentation = () => {
 
-    const detailColor = useColorModeValue('purple.500', 'purple.200');
+    const detailColor = 'purple.500';
 
     return (
         <Flex
@@ -11,6 +11,7 @@ const Presentation = () => {
             px={{ base: 8, md: 20 }}
             py={{ base: 8, md: 40 }}
             direction={{ base: 'column', lg: 'row' }}
+            h={{ base: 'auto', md: '100%' }}
         >
             <Box display={{ lg: 'none' }}>
                 <Image src='https://bit.ly/dan-abramov' alt='Dan Abramov' boxSize={200} mb={10} />
@@ -22,10 +23,10 @@ const Presentation = () => {
                         Nahuel Caballero
                     </Heading>
                     <Heading as="h2" size="lg" isTruncated color={detailColor}>
-                        Web Developer
+                        Fullstack Software Developer
                     </Heading>
 
-                    <Text fontSize='2xl' mt={5} textAlign={{ base: 'center', sm: 'left' }}>Welcome to my Portfolio! I'm Nahuel Caballero, a Web Developer based in Uruguay.</Text>
+                    <Text fontSize='2xl' mt={5} textAlign={{ base: 'center', sm: 'left' }}>Welcome to my Portfolio! I'm Nahuel Caballero, a Sofware Developer based in Uruguay.</Text>
                 </Box>
 
                 <HStack spacing={{ base: 2, sm: 4 }} mt={5} justifyContent={{ base: 'center', sm: 'left' }}>
