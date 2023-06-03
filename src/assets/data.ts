@@ -2,7 +2,7 @@ export const working = [
     {
         id: 1,
         date: 'May 2023 - Present',
-        title: 'Software Developer',
+        title: 'Technical Account Manager',
         type: 'Work',
         description: 'Pay-Pros',
     },
@@ -25,10 +25,10 @@ export const working = [
 export const education = [
     {
         id: 1,
-        date: 'May 2023 - Present',
-        title: 'Certified Tech Developer',
+        date: 'Aug 2023 - Present',
+        title: `Licenciatura en Sistemas`,
         type: 'Education',
-        description: 'Digital House',
+        description: 'Universidad ORT Uruguay',
     },
     {
         id: 2,

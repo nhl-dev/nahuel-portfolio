@@ -1,11 +1,15 @@
 import React from 'react'
-import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import { ChakraProvider, extendTheme, type ThemeConfig } from '@chakra-ui/react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 
-const theme = extendTheme({
+const config: ThemeConfig = {
   initialColorMode: 'dark',
   useSystemColorMode: false,
+}
+
+const theme = extendTheme({
+  config,
   styles: {
     global: {
       // styles for the `body`
