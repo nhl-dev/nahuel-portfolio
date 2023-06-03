@@ -14,11 +14,11 @@ const Projects = () => {
                 <Image src="https://i.ibb.co/MfpC2ZD/separador.png" alt="separator" mx="auto" my={8} />
             </Box>
 
-            <Flex direction={{ base: 'column', lg: 'row' }} justifyContent={'center'} alignItems={'center'} gap={10} >
+            <Flex direction={{ base: 'column', lg: 'row' }} justifyContent={'center'} alignItems={'center'} >
                 <ProjectCard data={projects[0]} />
                 <ProjectCard data={projects[0]} />
             </Flex>
-            <Flex direction={{ base: 'column', lg: 'row' }} justifyContent={'center'} alignItems={'center'} gap={10} >
+            <Flex direction={{ base: 'column', lg: 'row' }} justifyContent={'center'} alignItems={'center'} >
                 <ProjectCard data={projects[0]} />
                 <ProjectCard data={projects[0]} />
             </Flex>

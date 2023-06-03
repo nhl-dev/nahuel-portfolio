@@ -14,7 +14,7 @@ const Presentation = () => {
             h={{ base: 'auto', md: '100%' }}
         >
             <Box display={{ lg: 'none' }}>
-                <Image src='https://i.ibb.co/8XPdjfY/profile-photo-50.jpg' alt='Nahuel Profile Pic' boxSize={200} mb={10} />
+                <Image src='https://i.ibb.co/8XPdjfY/profile-photo-50.jpg' alt='Nahuel Profile Pic' boxSize={200} mb={10} borderRadius={10} borderTopLeftRadius={40} borderBottomRightRadius={40} />
             </Box>
 
             <Box>

@@ -11,7 +11,7 @@ import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
 import NavLink from './NavLink';
 
-const links = ['About Me', 'Projects', 'Resume'];
+const links = ['About Me', 'Projects', 'Skills'];
 
 const NavBar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -43,7 +43,8 @@ const NavBar = () => {
                         variant={'solid'}
                         bg={'purple.500'}
                         colorScheme={'purple'}
-                        size={'md'}>
+                        size={'md'}
+                        color={'white'}>
                         Contact
                     </Button>
                 </Flex>
