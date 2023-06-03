@@ -28,15 +28,16 @@ const Presentation = () => {
 
                     <Text fontSize='2xl' mt={5} textAlign={{ base: 'center', sm: 'left' }}>Welcome to my Portfolio! I'm Nahuel Caballero, a Sofware Developer based in Uruguay.</Text>
                 </Box>
-
-                <HStack direction={'row'} spacing={3} mt={3}>
-                    <Link href='https://github.com/nhl-dev' isExternal>
-                        <Image src='https://i.ibb.co/4M89htL/pngegg-1.png' alt='GitHub' boxSize={12} fit={'contain'} p={1} />
-                    </Link>
-                    <Link href='https://www.linkedin.com/in/nahuel-caballero/' isExternal>
-                        <Image src='https://i.ibb.co/wNZMjDZ/CITYPNG-COM-Linked-In-Square-White-Icon-Transparent-PNG-500x500.png' alt='LinkedIn' boxSize={12} fit={'contain'} />
-                    </Link>
-                </HStack>
+                <Box display='flex' flexDirection='column' alignItems={{ base: 'center', sm: 'start' }}>
+                    <HStack direction={'row'} spacing={3} mt={3} >
+                        <Link href='https://github.com/nhl-dev' isExternal>
+                            <Image src='https://i.ibb.co/4M89htL/pngegg-1.png' alt='GitHub' boxSize={12} fit={'contain'} p={1} />
+                        </Link>
+                        <Link href='https://www.linkedin.com/in/nahuel-caballero/' isExternal>
+                            <Image src='https://i.ibb.co/wNZMjDZ/CITYPNG-COM-Linked-In-Square-White-Icon-Transparent-PNG-500x500.png' alt='LinkedIn' boxSize={12} fit={'contain'} />
+                        </Link>
+                    </HStack>
+                </Box>
 
                 <Flex direction={{ base: 'column', sm: 'row' }} alignItems={'center'} mt={10}>
                     <Text fontSize='2xl' fontWeight={'bold'} mr={{ base: 0, sm: 8 }}>Main Stack:</Text>
