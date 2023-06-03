@@ -1,7 +1,6 @@
 import { ReactNode } from 'react';
 import {
     Link,
-    useColorModeValue,
 } from '@chakra-ui/react';
 
 const NavLink = ({ children }: { children: ReactNode }) => (
