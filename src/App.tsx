@@ -6,6 +6,8 @@ import Projects from './components/content/Projects';
 
 import Contact from './components/content/Contact';
 import Footer from './components/footer/Footer';
+import Skills from './components/content/Skills';
+import Experience from './components/content/Experience';
 
 function App() {
 
@@ -25,23 +27,16 @@ function App() {
       </div>
 
       <div className='odd'>
-        //TODO: Skills
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <Skills />
       </div>
 
-      <Contact />
+      <div>
+        <Experience />
+      </div>
+
+      <div>
+        <Contact />
+      </div>
 
       <Footer />
     </>
