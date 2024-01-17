@@ -19,10 +19,10 @@ const Presentation = () => {
 
             <Box>
                 <Box display='flex' flexDirection='column' alignItems={{ base: 'center', lg: 'start' }}>
-                    <Heading as="h1" size="2xl" isTruncated>
+                    <Heading as="h1" fontSize={["2xl", "3xl", "4xl", "5xl"]} isTruncated>
                         Nahuel Caballero
                     </Heading>
-                    <Heading as="h2" size="lg" isTruncated color={detailColor}>
+                    <Heading as="h2" fontSize={["md", "lg", "xl", "2xl"]} isTruncated color={detailColor}>
                         Fullstack Software Developer
                     </Heading>
 

@@ -10,7 +10,7 @@ const AboutMe = () => {
     return (
         <ScaleFade in={inViewport} >
             <Container ref={ref} py={70} >
-                <chakra.h3 fontSize="3xl" fontWeight="bold" mb={18} textAlign="center" color="#121212" >
+                <chakra.h3 fontSize="3xl" fontWeight="bold" mb={18} textAlign="center" color="#121212">
                     About Me
                 </chakra.h3>
 
